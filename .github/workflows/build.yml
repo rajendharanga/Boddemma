@@ -1,0 +1,37 @@
+
+name: Build Boddemma Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Upload dist ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: Boddemma-dist
+          path: dist/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
