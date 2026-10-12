@@ -1,0 +1,7 @@
+{
+  "name": "Boddemma.com — Telangana's Living Floral Heritage",
+  "description": "The comprehensive multilingual digital archive and cultural guide to Boddemma and Bathukamma, Telangana's living floral traditions. An initiative by The Panchayithi Network.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

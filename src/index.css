@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #FFF8E9;
+    --color-ivory-muted: #F4E8CE;
+    --color-forest: #1B3325;
+    --color-leaf: #315D38;
+    --color-turmeric: #E8B83F;
+    --color-vermilion: #B84232;
+    --color-terracotta: #A65E43;
+    --color-floral-pink: #D889A5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+    background-color: #FFF8E9;
+    color: #1B3325;
+  }
+
+  body {
+    background-image: radial-gradient(rgba(184, 66, 50, 0.04) 1px, transparent 0),
+      radial-gradient(rgba(232, 184, 63, 0.06) 1px, #FFF8E9 0);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+  }
+
+  h1, h2, h3, .font-serif-editorial {
+    font-family: 'Cormorant Garamond', 'Noto Serif Telugu', Georgia, serif;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  html[lang="te"] body {
+    font-family: 'Noto Sans Telugu', 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.8;
+  }
+
+  html[lang="te"] h1,
+  html[lang="te"] h2,
+  html[lang="te"] h3,
+  html[lang="te"] .font-serif-editorial {
+    font-family: 'Noto Serif Telugu', 'Cormorant Garamond', serif;
+    line-height: 1.4;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .magazine-shadow {
+    box-shadow: 0 18px 40px -15px rgba(32, 58, 43, 0.14);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+

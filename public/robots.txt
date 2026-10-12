@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Boddemma.com — A cultural heritage initiative by The Panchayithi Network
+Sitemap: https://boddemma.com/sitemap.xml
+Sitemap: https://boddemma.com/sitemap-pages.xml
+Sitemap: https://boddemma.com/sitemap-articles.xml
+Sitemap: https://boddemma.com/sitemap-images.xml
